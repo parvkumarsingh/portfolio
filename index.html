@@ -223,6 +223,18 @@ ul.pts li::before{content:"▹";position:absolute;left:0;color:var(--accent);fon
 .job ul.pts li{font-size:15px}
 .job ul.pts{margin-bottom:0}
 
+/* org logos */
+.org{display:flex;gap:16px;align-items:center}
+.org-logo{
+  flex-shrink:0;width:48px;height:48px;border-radius:10px;background:#fff;padding:6px;
+  display:grid;place-items:center;border:1px solid var(--line);
+  box-shadow:0 0 0 3px rgba(62,230,176,.08);
+}
+.org-logo img{width:100%;height:100%;object-fit:contain;display:block}
+.org-logo{overflow:hidden}
+.org-logo img[src*="lloyd"]{transform:scale(1.45)}
+.edu-top{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+
 /* education */
 .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:44px}
 .edu{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
@@ -495,8 +507,13 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;font-fa
     <div class="sec-head reveal"><span class="idx">04.</span><h2>Experience</h2><span class="rule"></span></div>
     <div class="timeline">
       <div class="job reveal">
-        <div class="when">Nov 2025 — Nov 2026</div>
-        <h3>Associate Research Analyst <span>@ Highspring India</span></h3>
+        <div class="org">
+          <span class="org-logo"><img src="assets/logos/highspring.png" alt="Highspring logo" width="40" height="40" loading="lazy"></span>
+          <div>
+            <div class="when">Nov 2025 — Nov 2026</div>
+            <h3>Associate Research Analyst <span>@ Highspring India</span></h3>
+          </div>
+        </div>
         <div class="meta"><span class="chip">200+ items / week</span><span class="chip">AI Auto-Rater Tool</span><span class="chip">Team dashboards</span></div>
         <ul class="pts">
           <li>Worked on research, data validation, classification, and quality-control tasks for AI-related datasets, validating and classifying 200+ items per week against defined guidelines.</li>
@@ -508,8 +525,13 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;font-fa
         </ul>
       </div>
       <div class="job reveal">
-        <div class="when">Jun 2025 — Aug 2025 · Summer Internship</div>
-        <h3>Research Analyst Intern <span>@ GlobalData</span></h3>
+        <div class="org">
+          <span class="org-logo"><img src="assets/logos/globaldata.png" alt="GlobalData logo" width="40" height="40" loading="lazy"></span>
+          <div>
+            <div class="when">Jun 2025 — Aug 2025 · Summer Internship</div>
+            <h3>Research Analyst Intern <span>@ GlobalData</span></h3>
+          </div>
+        </div>
         <div class="meta"><span class="chip">10+ deliverables</span><span class="chip">15+ company snapshots</span><span class="chip">SEC filings</span></div>
         <ul class="pts">
           <li>Conducted secondary research and validated company and subsidiary data using Hoovers, OneSource, U.S. SEC filings, and annual reports across 10+ client-facing research deliverables.</li>
@@ -528,13 +550,19 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;font-fa
     <div class="sec-head reveal"><span class="idx">05.</span><h2>Education &amp; certifications</h2><span class="rule"></span></div>
     <div class="edu-grid">
       <div class="edu reveal">
-        <div class="when">Jul 2024 — Jun 2026</div>
+        <div class="edu-top">
+          <span class="org-logo"><img src="assets/logos/lloyd-business-school.png" alt="Lloyd Business School logo" width="40" height="40" loading="lazy"></span>
+          <div class="when">Jul 2024 — Jun 2026</div>
+        </div>
         <h3>Post Graduate Diploma in Management (PGDM)</h3>
         <div class="spec">Business Analytics</div>
         <div class="school">Lloyd Business School</div>
       </div>
       <div class="edu reveal">
-        <div class="when">Oct 2021 — Jun 2024</div>
+        <div class="edu-top">
+          <span class="org-logo"><img src="assets/logos/manipal-university-jaipur.png" alt="Manipal University Jaipur logo" width="40" height="40" loading="lazy"></span>
+          <div class="when">Oct 2021 — Jun 2024</div>
+        </div>
         <h3>Bachelor of Business Administration (BBA)</h3>
         <div class="spec">Accounting &amp; Finance</div>
         <div class="school">Manipal University Jaipur</div>
