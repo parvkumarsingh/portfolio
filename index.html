@@ -229,7 +229,10 @@ ul.pts li::before{content:"▹";position:absolute;left:0;color:var(--accent);fon
 .org-logo img{width:100%;height:100%;object-fit:contain;display:block}
 .org-logo{overflow:hidden}
 .org-logo img[src*="lloyd"]{transform:scale(1.45)}
-.edu-top{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.edu-row{display:flex;align-items:flex-start;gap:16px}
+.edu-row h3{margin:0 0 4px}
+.edu-row .school{margin-top:4px}
+.edu-row .when{margin-top:10px}
 
 /* education */
 .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:44px}
@@ -547,22 +550,26 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;font-fa
     <div class="sec-head reveal"><span class="idx">05.</span><h2>Education &amp; certifications</h2><span class="rule"></span></div>
     <div class="edu-grid">
       <div class="edu reveal">
-        <div class="edu-top">
+        <div class="edu-row">
           <span class="org-logo"><img src="assets/logos/lloyd-business-school.png" alt="Lloyd Business School logo" width="40" height="40" loading="lazy"></span>
-          <div class="when">Jul 2024 — Jun 2026</div>
+          <div>
+            <h3>Post Graduate Diploma in Management (PGDM)</h3>
+            <div class="spec">Business Analytics</div>
+            <div class="school">Lloyd Business School</div>
+            <div class="when">Jul 2024 — Jun 2026</div>
+          </div>
         </div>
-        <h3>Post Graduate Diploma in Management (PGDM)</h3>
-        <div class="spec">Business Analytics</div>
-        <div class="school">Lloyd Business School</div>
       </div>
       <div class="edu reveal">
-        <div class="edu-top">
+        <div class="edu-row">
           <span class="org-logo"><img src="assets/logos/manipal-university-jaipur.png" alt="Manipal University Jaipur logo" width="40" height="40" loading="lazy"></span>
-          <div class="when">Oct 2021 — Jun 2024</div>
+          <div>
+            <h3>Bachelor of Business Administration (BBA)</h3>
+            <div class="spec">Accounting &amp; Finance</div>
+            <div class="school">Manipal University Jaipur</div>
+            <div class="when">Oct 2021 — Jun 2024</div>
+          </div>
         </div>
-        <h3>Bachelor of Business Administration (BBA)</h3>
-        <div class="spec">Accounting &amp; Finance</div>
-        <div class="school">Manipal University Jaipur</div>
       </div>
     </div>
     <div class="cert-head reveal">// certifications</div>
